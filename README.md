@@ -10,15 +10,7 @@ Tested and working under **Django 1.7** and **Python 3.4**.
 Installation
 ============
 
-Install from PyPI with ``easy_install`` or ``pip``::
-
-    pip install django-lockdown
-
-or get the `in-development version`_::
-
-    pip install django-lockdown==tip
-
-.. _in-development version: http://bitbucket.org/carljm/django-lockdown/get/tip.gz#egg=django_lockdown-tip
+Download source.
 
 To use ``django-lockdown`` in your Django project:
 
