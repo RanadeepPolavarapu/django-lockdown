@@ -7,8 +7,8 @@ A simple Django reusable application for locking down an entire site
 
 Tested and working under **Django 1.7** and **Python 3.4**.
 
-Use
-====
+Potential Uses
+==============
 Very useful for restricting access to dev/beta sites. Can be used to restrict website during maintainence mode.
 
 I personally use it to restrict outside access for my dev site.
