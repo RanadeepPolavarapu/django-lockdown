@@ -1,5 +1,5 @@
 ===============
-django-lockdown
+Django-Lockdown
 ===============
 
 A simple Django reusable application for locking down an entire site
