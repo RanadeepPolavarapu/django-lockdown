@@ -20,7 +20,7 @@ try:
 except IOError:
     hgrev = ''
 
-long_description = '\n'.join([open('README.rst').read(),
+long_description = '\n'.join([open('README.md').read(),
                               open('CHANGES.rst').read(),
                               open('TODO.rst').read()])
 setup(
