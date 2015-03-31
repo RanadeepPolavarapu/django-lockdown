@@ -16,7 +16,7 @@ Installation
 ============
 Easiest method
 ----------------
-Install using [https://github.com/pypa/pip](https://github.com/pypa/pip) do:
+Install using [pip3](https://github.com/pypa/pip) do:
 
 	pip3 install https://github.com/RanadeepPolavarapu/django-lockdown/zipball/master
 
