@@ -14,8 +14,6 @@ I personally use it to restrict outside access for my dev site.
 
 Installation
 ============
-Easiest method
-----------------
 Install using [pip3](https://github.com/pypa/pip) do:
 
 	pip3 install https://github.com/RanadeepPolavarapu/django-lockdown/zipball/master
@@ -24,19 +22,18 @@ To upgrade do:
 
 	pip3 install https://github.com/RanadeepPolavarapu/django-lockdown/zipball/master --upgrade
 
-
-or you can download source.
+or you can download source and install locally still using `pip3`.
 
 To use `django-lockdown` in your Django project:
 
-    1. Add `'lockdown'` to your `INSTALLED_APPS` setting.
+1. Add 'lockdown' to your INSTALLED_APPS setting.
 
-    2. To enable admin preview of locked-down sites or views with
-       passwords, set the `LOCKDOWN_PASSWORDS`_ setting to a tuple of one or
-       more plain-text passwords.
+2. To enable admin preview of locked-down sites or views with
+   passwords, set the LOCKDOWN_PASSWORDS setting to a tuple of one or
+   more plain-text passwords.
 
-    3. Protect the entire site by using middleware, or protect individual views
-       by applying a decorator to them.
+3. Protect the entire site by using middleware, or protect individual views
+   by applying a decorator to them.
        
 For more advanced customization of admin preview authorization, see
 the `LOCKDOWN_FORM`_ setting.
