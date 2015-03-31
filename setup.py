@@ -25,13 +25,13 @@ long_description = '\n'.join([open('README.md').read(),
                               open('TODO.rst').read()])
 setup(
     name='django-lockdown',
-    version='0.1.1.post%s' % hgrev,
+    version='0.1.2.post%s' % hgrev,
     description=('Site-wide or per-view lockdown with customizable preview '
                  'authorization'),
     long_description=long_description,
-    author='Carl Meyer',
-    author_email='carl@dirtcircle.com',
-    url='http://bitbucket.org/carljm/django-lockdown/',
+    author='Ranadeep Polavarapu',
+    author_email='RanadeepPolavarapu@users.noreply.github.com',
+    url='https://github.com/RanadeepPolavarapu/django-lockdown/',
     packages=find_packages(),
     classifiers=[
         'Development Status :: 3 - Alpha',
