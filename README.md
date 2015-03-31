@@ -6,6 +6,9 @@ A simple Django reusable application for locking down an entire site
 
 Tested and working under **Django 1.7** and **Python 3.4**.
 
+Preview:
+![Image preview of django-lockdown](https://cloud.githubusercontent.com/assets/7084995/6931067/25f151d4-d7d7-11e4-88b5-43c8e9a719ad.png)
+
 Potential Uses
 ==============
 Very useful for restricting access to dev/beta sites. Can be used to restrict website during maintainence mode.
