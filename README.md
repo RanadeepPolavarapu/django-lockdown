@@ -26,24 +26,26 @@ or you can download source and install locally still using `pip3`.
 
 To use `django-lockdown` in your Django project:
 
-1. Add 'lockdown' to your INSTALLED_APPS setting.
+1. Add `"lockdown"` to your `INSTALLED_APPS` setting.
 
 2. To enable admin preview of locked-down sites or views with
-   passwords, set the LOCKDOWN_PASSWORDS setting to a tuple of one or
+   passwords, set the `LOCKDOWN_PASSWORDS` setting to a tuple of one or
    more plain-text passwords.
 
 3. Protect the entire site by using middleware, or protect individual views
    by applying a decorator to them.
        
 For more advanced customization of admin preview authorization, see
-the `LOCKDOWN_FORM`_ setting.
+the `LOCKDOWN_FORM` setting.
 
 Dependencies
 ------------
 
-`django-lockdown` requires `Django`_ 1.1 or later.
+django-lockdown requires **Django** 1.1 or later.
 
-.. _Django: http://www.djangoproject.com/
+This particular package is built for **Python3**.
+
+Django: http://www.djangoproject.com/
 
 Usage
 =====
@@ -75,33 +77,33 @@ The decorator accepts four arguments:
 
 `form`
   The form to use for providing an admin preview, rather than the form
-  referenced by `LOCKDOWN_FORM`_. Note that this must be an actual form class,
+  referenced by `LOCKDOWN_FORM`. Note that this must be an actual form class,
   not a module reference like the setting.
 
 `until_date`
-  The date to use rather than the date provided by `LOCKDOWN_UNTIL`_.
+  The date to use rather than the date provided by `LOCKDOWN_UNTIL`.
 
 `after_date`
-  The date to use rather than the date provided by `LOCKDOWN_AFTER`_.
+  The date to use rather than the date provided by `LOCKDOWN_AFTER`.
 
 `logout_key`
   A preview logout key to use, rather than the one provided by
-  `LOCKDOWN_LOGOUT_KEY`_.
+  `LOCKDOWN_LOGOUT_KEY`.
 
 `session_key`
   The session key to use, rather than the one provided by
-  `LOCKDOWN_SESSION_KEY`_.
+  `LOCKDOWN_SESSION_KEY`.
  
 `url_exceptions`
   A list of regular expressions for which matching urls can bypass the lockdown
-  (rather than using those defined in `LOCKDOWN_URL_EXCEPTIONS`_).
+  (rather than using those defined in `LOCKDOWN_URL_EXCEPTIONS`).
 
 Any further keyword arguments are passed to the admin preview form. The default
 form accepts one argument:
 
 `passwords`
   A tuple of passwords to use, rather than the ones provided by
-  `LOCKDOWN_PASSWORDS`_.
+  `LOCKDOWN_PASSWORDS`.
 
 
 Settings
@@ -118,7 +120,7 @@ views protected by django-lockdown::
 If this setting is not provided (and the default `LOCKDOWN_FORM`_ is being
 used), there will be no admin preview for locked-down pages.
 
-If a `LOCKDOWN_FORM`_ other than the default is used, this setting has no
+If a `LOCKDOWN_FORM` other than the default is used, this setting has no
 effect.
 
 LOCKDOWN_URL_EXCEPTIONS
@@ -148,7 +150,7 @@ LOCKDOWN_AFTER
 Used to lock the site down after a certain date. Set to a `datetime.datetime`
 object.
 
-See also: `LOCKDOWN_UNTIL`_.
+See also: `LOCKDOWN_UNTIL`.
 
 LOCKDOWN_LOGOUT_KEY
 -------------------
@@ -160,7 +162,7 @@ LOCKDOWN_FORM
 -------------
 
 The default lockdown form allows admin preview by entering a preset
-plain-text password (checked, by default, against the `LOCKDOWN_PASSWORDS`_
+plain-text password (checked, by default, against the `LOCKDOWN_PASSWORDS`
 setting). To set up more advanced methods of authenticating access to
 locked-down pages, set `LOCKDOWN_FORM` to the Python dotted path to a Django
 `Form` subclass. This form will be displayed on the lockout page. If the form
@@ -174,11 +176,11 @@ accepts two keyword arguments (in the `lockdown` decorator):
 
 `staff_only`
   Only allow staff members to preview. Defaults to `True` (but the default
-  can be provided as a `LOCKDOWN_AUTHFORM_STAFF_ONLY`_ setting).
+  can be provided as a `LOCKDOWN_AUTHFORM_STAFF_ONLY` setting).
 
 `superusers_only`
   Only allow superusers to preview. Defaults to `False` (but the default
-  can be provided as a `LOCKDOWN_AUTHFORM_SUPERUSERS_ONLY`_ setting).
+  can be provided as a `LOCKDOWN_AUTHFORM_SUPERUSERS_ONLY` setting).
 
 LOCKDOWN_AUTHFORM_STAFF_ONLY
 ----------------------------
