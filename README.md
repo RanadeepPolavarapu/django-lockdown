@@ -4,7 +4,7 @@ Django-Lockdown
 A simple Django reusable application for locking down an entire site
 (or particular views), with customizable date ranges and preview authorization.
 
-Tested and working under **Django 1.7** and **Python 3.4**.
+Tested and working under **Django 1.8** and **Python 3.4**.
 
 Preview:
 ![Image preview of django-lockdown](https://cloud.githubusercontent.com/assets/7084995/6931067/25f151d4-d7d7-11e4-88b5-43c8e9a719ad.png)
